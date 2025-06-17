@@ -1,0 +1,35 @@
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero .hero-image {
+        max-width: 100%;
+    }
+
+    .header .nav nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .nav nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero .cta-button {
+        padding: 12px 24px;
+    }
+}
