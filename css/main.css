@@ -119,18 +119,21 @@ body {
 }
 
 
-.best-selling .image,
+   .best-selling .image,           
 .story-section .story-image {
   background: #ddd;
   height: 430px;
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
   margin: 1rem auto;
 }
+
+ 
+
 
 .h2 {
     font-size: 45px;

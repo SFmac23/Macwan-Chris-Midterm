@@ -17,10 +17,12 @@
 }
 
 .best-selling {
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2rem 1rem;
+  grid-template-columns: 1fr ;
+  padding: 1rem 1rem;
   text-align: center;
 }
+
+
 
 .story-section {
   grid-template-columns: 1fr;
