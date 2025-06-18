@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BillyBeer- HomePage</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billy Beer</title>
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+<bodyw>
+  <header class="site-header">
+    <div class="container flex">
+      <a href="home.html" class="logo">
+  <img src="images/main-Logo.svg" alt="Billy Beer Logo"/>
+</a>
 
-<body>
+ 
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#">Our Beer</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-    <header class="header">
-        <div class="container">     
-            <div class="nav">
-                <div class="logo">
-                    <img src="images/main-Logo.svg" alt="Company Logo">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+      <a href="#" class="btn">Buy Now</a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h1>Billy Beer</h1>
-                <p>Your premium choice of beer.</p>
-                <button class="cta-button">Explore Now</button>
-            </div>
-            <div class="hero-image">
-                <span class="placeholder-image">Image Placeholder</span>
-            </div>
-        </div>
-    </section>
+  <section class="hero grid">
+    <div class="hero-image">Hero Image</div>
+    <div class="hero-text">
+     <h1>Welcome To <br>
+        Billy Beer
+     </h1>
+      <h2>100% Canadian-Born Brew</h2>
+      
+    </div>
+  </section>
+<h2 class="h2">Look At Our Best Selling Beers</h2>
+  <section class="best-selling grid">
+    
+    <div class="image image1">Image 1</div>
+    <div class="image image2">Image 2</div>
+    <div class="image image3">Image 3</div>
+  </section>
+   
+  <h2  class="h2">Look At Our Beer Making Story</h2>
+  <section class="story-section grid">
+    
+    <div class="image story-image">Story Image</div>
+  </section>
 
-    <section class="about">
-        <div class="container">
-            <h2>About Billy Beer</h2>
-            <p>Billy beer is a premium beer that brings a taste of luxury to your moments. Enjoy the crisp, refreshing taste with every sip!</p>
-        </div>
-    </section>
+  <footer class="footer">
+    <p>&copy; 2025 Billy Beer. All Rights Reserved.</p>
+  </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 Billy Beer | All Rights Reserved</p>
-        </div>
-    </footer>
-
+  <!-- Link to external JS -->
+  <script src="js/script.js"></script>
 </body>
-
 </html>

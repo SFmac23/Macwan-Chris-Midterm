@@ -1,35 +1,43 @@
-/* Media Queries for Responsiveness */
-@media only screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero .hero-text {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .hero .hero-image {
-        max-width: 100%;
-    }
-
-    .header .nav nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header .nav nav ul li {
-        margin-bottom: 10px;
-    }
+/* grid.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-@media only screen and (max-width: 480px) {
-    .hero .hero-text h1 {
-        font-size: 35px;
-    }
+.grid {
+  display: grid;
+  gap: 1rem;
+}
 
-    .hero .cta-button {
-        padding: 12px 24px;
-    }
+.hero {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.best-selling {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.story-section {
+  grid-template-columns: 1fr;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .best-selling {
+    grid-template-columns: 1fr;
+  }
+
+  .story-section {
+    grid-template-columns: 1fr;
+  }
 }
