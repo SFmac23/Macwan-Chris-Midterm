@@ -1,4 +1,4 @@
-/* Reset & box sizing */
+
 *,
 *::before,
 *::after {
@@ -7,23 +7,23 @@
   padding: 0;
 }
 
-/* Body & global */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #000000, #A9A9A9);
   color: white;
   line-height: 1.6;
-  min-height: 100vh;
+  min-height: 900px;
 }
 
-/* Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
-/* Flex utilities */
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 
-/* Header */
+
 .site-header {
   background: linear-gradient(to right, #A9A9A9, #000000);
   padding: 1rem 0; /* increased padding instead of fixed height */
@@ -41,15 +41,15 @@ body {
   z-index: 1000;
 }
 
-/* Flex container inside header */
+
 .container.flex {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* center vertically */
+  align-items: center; 
   position: relative;
 }
 
-/* Logo */
+
 .logo img {
   height: 80px;
   width: auto;
@@ -61,20 +61,20 @@ body {
   transform: scale(1.05);
 }
 
-/* Navigation */
+
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 48px;
 }
 
 .main-nav a {
   color: white;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 16px;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 8px 0;
   transition: color 0.3s ease;
 }
 
@@ -99,10 +99,10 @@ body {
   width: 100%;
 }
 
-/* Hamburger menu */
+
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 32px;
   background: none;
   color: white;
   border: none;
@@ -115,11 +115,11 @@ body {
   color: #e63946;
 }
 
-/* Button */
+
 .btn {
   background: #c0c0c0;
   color: #000000;
-  padding: 0.75rem 1.5rem;
+  padding: 16px 24px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -136,11 +136,11 @@ body {
   outline: none;
 }
 
-/* Headings */
+
 .h2 {
-  font-size: 3rem;
+  font-size: 48px;
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 32px 0 16px;
   color: white;
   font-weight: 800;
   letter-spacing: 1px;
@@ -148,7 +148,7 @@ body {
   text-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
 }
 
-/* Hero Section */
+
 .hero-image img {
   width: 100%;
   max-width: 800px;
@@ -164,25 +164,25 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 4.5rem;
+  font-size: 70px;
   color: white;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   text-shadow: 0 0 15px #e63946;
 }
 
 .hero-text h2 {
-  font-size: 1.75rem;
-  color: #a0522d; /* brown */
+  font-size: 25px;
+  color: #551f1f; 
   font-weight: 600;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Best Selling Section */
+
 .best-selling .image {
-  height: auto; /* remove fixed height */
+  height: auto; 
   max-width: 800px;
-  margin: 1rem auto;
+  margin: 16px auto;
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -203,7 +203,7 @@ body {
   transform: scale(1.02);
 }
 
-/* Story Section */
+
 .story-section .story-image {
   height: 450px;
   max-width: 800px;
@@ -227,18 +227,18 @@ body {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 .footer {
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
+  padding: 25px 16px;
+  margin-top: 33px;
   box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
   font-weight: 500;
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -270,16 +270,17 @@ body {
   }
 }
 
-/* Responsive Styles */
 
-/* Tablets (769px - 1024px) */
+
+/* Tablets */
 @media (max-width: 1024px) and (min-width: 769px) {
+
   .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 55px;
   }
 
   .hero-text h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .best-selling .image {
@@ -301,7 +302,7 @@ body {
     right: 0;
     top: 80px;
     width: 100%;
-    padding: 1rem 0;
+    padding: 16px 0;
     z-index: 10000;
     border-top: 2px solid #e63946;
   }
@@ -312,7 +313,7 @@ body {
 
   .main-nav ul {
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
     align-items: center;
   }
 
@@ -325,25 +326,33 @@ body {
   }
 
   .hero-text {
-    margin-top: 1rem;
-    padding: 0 1rem;
+    margin-top: 16px;
+    padding: 0 16px;
   }
 
   .hero-text h1 {
-    font-size: 2.8rem;
+    font-size: 45px;
   }
 
   .hero-text h2 {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
+
+   .story-section .story-image {
+    height: auto; }
+
+  .story-section .story-image img {
+    height: auto; 
+    object-fit: contain;
 
   .btn {
     display: block;
-    margin: 1.5rem auto 0 auto;
+    margin: 25px auto 0 auto;
   }
 
   .footer {
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 16px;
+    font-size: 15px;
   }
+}
 }

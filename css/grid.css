@@ -1,41 +1,41 @@
-/* Grid Layouts */
+
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
-/* Hero Section */
+
 .hero {
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 24px 16px;
 }
 
-/* Best Selling Section */
+
 .best-selling {
   grid-template-columns: 1fr; 
-  padding: 1rem 1rem 3rem;
-  text-align: center;
-}
-/* Story Section */
-.story-section {
-  grid-template-columns: 1fr;
-  padding: 2rem 1rem 3rem;
+  padding: 16px 16px 48px;
   text-align: center;
 }
 
-/* Responsive grid adjustments */
+.story-section {
+  grid-template-columns: 1fr;
+  padding: 32px 16px 48px;
+  text-align: center;
+}
+
+
 
 /* Tablets (769px - 1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
   .hero {
     grid-template-columns: 1fr;
-    padding: 2rem 2rem;
+    padding: 32px 32px;
   }
 
   .best-selling {
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 1rem 2rem;
+    padding: 16px 16px 32px;
   }
 }
 
@@ -43,16 +43,16 @@
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
-    padding: 1.5rem 1rem;
+    padding: 24px 16px;
   }
 
   .best-selling {
     grid-template-columns: 1fr;
-    padding: 1rem 1rem 2rem;
+    padding: 16px 16px 32px;
   }
 
   .story-section {
     grid-template-columns: 1fr;
-    padding: 1rem 1rem 2rem;
+    padding: 16px 16px 32px;
   }
 }
