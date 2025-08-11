@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const mainNav = document.getElementById('mainNav');
+const hamburgerButton = document.querySelector('#hamburger');
+const mainNavigation = document.querySelector('#mainNav');
 
-  hamburger.addEventListener('click', () => {
-    mainNav.classList.toggle('active');
-  });
-});
+function toggleNavigation() {
+  mainNavigation.classList.toggle('active');
+}
+
+hamburgerButton.addEventListener('click', toggleNavigation);
