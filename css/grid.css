@@ -1,45 +1,58 @@
-/* grid.css */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
+/* Grid Layouts */
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
+/* Hero Section */
 .hero {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 2rem 1rem;
 }
 
+/* Best Selling Section */
 .best-selling {
-  grid-template-columns: 1fr ;
-  padding: 1rem 1rem;
+  grid-template-columns: 1fr; 
+  padding: 1rem 1rem 3rem;
   text-align: center;
 }
-
-
-
+/* Story Section */
 .story-section {
   grid-template-columns: 1fr;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 3rem;
   text-align: center;
 }
 
+/* Responsive grid adjustments */
+
+/* Tablets (769px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 2rem;
+  }
+
+  .best-selling {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem 2rem;
+  }
+}
+
+/* Mobile (up to 768px) */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
   }
 
   .best-selling {
     grid-template-columns: 1fr;
+    padding: 1rem 1rem 2rem;
   }
 
   .story-section {
     grid-template-columns: 1fr;
+    padding: 1rem 1rem 2rem;
   }
 }
